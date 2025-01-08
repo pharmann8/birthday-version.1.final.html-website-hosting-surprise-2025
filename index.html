@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Petit+Formal+Script&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* General Page Styles */
+        body {
+            background: linear-gradient(135deg, #f4e9dc, #f9f2ea);
+            margin: 0;
+            padding: 20px;
+            color: #800000;
+            min-height: 100vh;
+            animation: bgGradient 15s ease infinite;
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23800000'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E"), auto;
+        }
+
+        @keyframes bgGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Circle Button Styles */
+        .circle-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #800000;
+            color: white;
+            border-radius: 50%;
+            font-size: 14px;
+            text-align: center;
+            line-height: 60px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .circle-button:hover {
+            background-color: #600000;
+        }
+
+        /* Video Frame Styles */
+        iframe {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hidden Embedded YouTubeRepeater -->
+    <iframe 
+        id="audioPlayer" 
+        width="0" 
+        height="0" 
+        src="https://www.youtuberepeater.com/watch?v=Uu_E3pxZFG8&autoplay=1&loop=1" 
+        frameborder="0" 
+        allow="autoplay">
+    </iframe>
+
+    <!-- Circle Button -->
+    <button class="circle-button" onclick="playAudio()">🔉</button>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('audioPlayer');
+            audio.style.display = "block"; // Make sure the iframe becomes active
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Page Styles */
+        body {
+            background: linear-gradient(135deg, #f4e9dc, #f9f2ea);
+            margin: 0;
+            padding: 20px;
+            color: #800000;
+            min-height: 100vh;
+            animation: bgGradient 15s ease infinite;
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23800000'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E"), auto;
+        }
+	.container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            height: auto;
+        }
+        @keyframes bgGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Sparkle Effect */
+        @keyframes sparkle {
+            0% { transform: scale(0) rotate(0deg); opacity: 0; }
+            50% { transform: scale(1) rotate(180deg); opacity: 1; }
+            100% { transform: scale(0) rotate(360deg); opacity: 0; }
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #800000;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: sparkle 1s linear forwards;
+        }
+
+        /* Rest of the styles remain the same as the previous version */
+        [Previous styles from the last version...]
+
+        /* New Enhancements */
+        .letter-area::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.1) 45%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 55%, transparent 60%);
+            background-size: 200% 200%;
+            pointer-events: none;
+            animation: shine 4s infinite linear;
+            z-index: 1;
+        }
+
+        @keyframes shine {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* Heart Trail Effect */
+        .heart-trail {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            color: rgba(128, 0, 0, 0.6);
+            animation: float-heart 3s ease-in-out forwards;
+        }
+
+        @keyframes float-heart {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) scale(0);
+                opacity: 0;
+            }
+        }
+
+        /* New Loading Animation */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f4e9dc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .loading-heart {
+            font-size: 50px;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Enhanced button hover effect */
+        .youtube-button:hover::after {
+            content: '♥';
+            position: absolute;
+            animation: heart-burst 0.8s forwards;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        @keyframes heart-burst {
+            0% {
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -150%) scale(2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay">
+        <div class="loading-heart">Press Me ❤️</div>
+    </div>
+
+    <!-- Rest of the HTML structure remains the same as the previous version -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday!</title>
+    <style>
+        /* General Page Styles */
+        body {
+            background-color: #f4e9dc;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 20px;
+            color: #800000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            height: 600px; /* Ensures space for balloons */
+        }
+
+        /* Floating Balloons */
+        .balloon {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: rgba(128, 0, 0, 0.3); /* Faded balloon color */
+            border-radius: 50%;
+            animation: float 7s ease-in-out infinite;
+            z-index: 10; /* Ensure balloons are above other content */
+        }
+
+        .balloon::before {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 30px;
+            background: #5a0000;
+        }
+
+                .balloon:nth-child(1) {
+            left: 10%;
+            top: 15%;
+            animation-delay: 0s;
+        }
+
+        .balloon:nth-child(2) {
+            left: 20%;
+            top: 5%;
+            animation-delay: 1s;
+        }
+
+        .balloon:nth-child(3) {
+            left: 30%;
+            top: 30%;
+            animation-delay: 2s;
+        }
+
+        .balloon:nth-child(4) {
+            left: 40%;
+            top: 34%;
+            animation-delay: 3s;
+        }
+
+        .balloon:nth-child(5) {
+            left: 50%;
+            top: 20%;
+            animation-delay: 4s;
+        }
+
+        .balloon:nth-child(6) {
+            left: 90%;
+            top: 15%;
+            animation-delay: 5s;
+        }
+
+        .balloon:nth-child(7) {
+            left: 70%;
+            top: 60%;
+            animation-delay: 6s;
+        }
+
+        .balloon:nth-child(8) {
+            left: 80%;
+            top: 10%;
+            animation-delay: 7s;
+        }
+
+        .balloon:nth-child(9) {
+            left: 20%;
+            top: 50%;
+            animation-delay: 8s;
+        }
+
+        .balloon:nth-child(10) {
+            left: 60%;
+            top: 30%;
+            animation-delay: 9s;
+        }
+
+        .balloon:nth-child(11) {
+            left: 40%;
+            top: 48%;
+            animation-delay: 10s;
+        }
+
+        .balloon:nth-child(12) {
+            left: 10%;
+            top: 60%;
+            animation-delay: 11s;
+        }
+
+        .balloon:nth-child(13) {
+            left: 89%;
+            top: 40%;
+            animation-delay: 12s;
+        }
+
+        .balloon:nth-child(14) {
+            left: 50%;
+            top: 50%;
+            animation-delay: 13s;
+        }
+
+        .balloon:nth-child(15) {
+            left: 70%;
+            top: 30%;
+            animation-delay: 14s;
+        }
+
+        .balloon:nth-child(16) {
+            left: 30%;
+            top: 10%;
+            animation-delay: 15s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+
+       /* Header Styles */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #800000;
+            font-size: 3em;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+            font-family: 'Playfair Display', Georgia, serif;
+            margin-bottom: 10px;
+        }
+
+        .personal-message {
+            text-align: center;
+            font-size: 1.2em;
+            font-style: italic;
+            color: #8B4513;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        /* Vintage Handwritten Letter Styling */
+        .letter-area {
+            background-color: #fff9f0;
+            padding: 40px;
+            border: 1px solid #800000;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            margin-top: 20px;
+            line-height: 1.6;
+            color: #444;
+            font-size: 1.1em;
+            white-space: pre-wrap;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .vintage-border {
+            border: 20px solid transparent;
+            border-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png') 30 30 stretch;
+        }
+
+        /* Button Styles */
+        .youtube-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #800000;
+            color: #f4e9dc;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: 2px solid #600000;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            margin: 20px 0;
+        }
+
+        .youtube-button:hover {
+            background-color: #600000;
+            transform: translateY(-2px);
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .button-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Floating Balloons -->
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+
+        <!-- Header Section -->
+        <div class="header">
+            <h1>❤    !!!SURPRISE!!!    ❤</h1>
+            <div class="personal-message">
+                <p><b>Happiest Birthday, my dearest Sabiha</b></p>
+
+First and foremost, happy birthday again, my love—I love you so very much. I have a little confession to make: my apologies, because I had originally planned to handwrite this letter for you, but I never had the time or opportunity to do it amidst the chaos of studying for our upcoming O-Levels and managing everything at home.
+
+Instead, I poured my heart into creating something just as special (hopefully)— I created a whole ass webpage dedicated to you, for the first time!!! On it, I’ve also made a video for you, which you can watch by clicking the "Click Me" button. 
+
+I hope it brings a smile to your face. 
+
+Enjoy it, my princess!
+            </div>
+        </div>
+
+        <!-- Button Section -->
+        <div class="button-container">
+            <a href="https://youtu.be/_ku_1gzVaXY?si=s1LvxD4Q4jAVmJga" class="youtube-button">Click Me ♥</a>
+        </div>
+
+        <!-- Vintage Handwritten Letter Section -->
+        <div class="letter-area vintage-border">
+            <b>Chapter 1: Where It All Began</b>
+
+April 15th, 2024.
+Today feels like the perfect day to start something special—something for you, something for us. Sabiha, as I sit here and write this, I’ve just sent you a simple text: “I love you, Sabiha.” Three small words, but they carry the entirety of my heart.
+This moment marks the beginning of a ritual—one I’ve decided to keep, month after month. Every 15th, I’ll write a note, a message, or perhaps just those same three words, but each time, I’ll try to capture more of what you mean to me. This ritual isn’t just a tradition; it’s a promise—a promise to remind you, repeatedly, endlessly, that my love for you is constant.
+And so, I began:
+April 15th: “Again, damn, I love you, Sabiha.”
+May 15th: “Your love is my favorite story, Sabiha, one I never want to stop writing. I love you, Sabiha.”
+June 15th: “Every moment with you feels like a little piece of forever, Sabiha. I love you, Sabiha.”
+July 15th: “I could search the universe, Sabiha, and still find that my home is in your arms. I love you, Sabiha.”
+August 15th: “You’re the reason even my worst days end with a smile, Sabiha. I love you, Sabiha.”
+September 15th: “When I think of you, Sabiha, baby, I swear I can hear the stars singing. I love you, Sabiha.”
+October 15th: “Loving you, Sabiha, darling, feels like discovering a new kind of magic every day. I love you, Sabiha.”
+November 15th: “If my heart had a voice, Sabiha, my princess, it would whisper your name with every beat. I love you, Sabiha.”
+December 15th: “You’re the light I never knew I needed, Sabiha, my wife, and now I can’t imagine life without it. I love you, Sabiha.”
+When I started this, I was eager—maybe too eager—but I knew that by the time your birthday came around, this letter would mean something special. You know, Sabiha, I’ve always been the kind of person who starts early. Whether it’s studying, planning, or surprising you with tiny tokens of love, I like being prepared. But even I’ll admit—starting this on April 15th, an entire nine months before your birthday, might’ve been a little excessive.
+And yet, here we are.
+Back then, on April 15th, I envisioned this moment: sitting down and weaving together the words that would eventually become the letter you’re holding now. I imagined pouring my heart out, reminiscing about every little thing that makes you extraordinary, and marking every milestone that led us here.
+This isn’t just a letter, Sabiha. It’s a time capsule—a journey through the love we’ve built, the memories we’ve shared, and the future I dream of every single day. It’s me giving you a piece of myself, month by month, in a way that feels more real, more honest, more us than anything else could.
+And you know why I chose to do this? Because I wanted to create something no one else could give you. Other couples might exchange grand gifts, plan elaborate surprises, or shower each other with extravagance, but I can’t do that—not in the way I want to, not yet. My parents are strict, our circumstances are limiting, and sometimes it feels like the world conspires to keep us from expressing our love as freely as we’d like.
+So I thought, why not DIY this? Why not pour my soul into something handmade, homemade, crafted with love? Because, Sabiha, who doesn’t love something made entirely for them? This letter isn’t just words on paper; it’s my heart, my devotion, my everything. It’s all for you.
+And with that, my ritual began. One text, one message, one declaration of love at a time.
+This is just the start, Sabiha. There’s so much more to say, so much more to feel, and this is only Chapter 1. The story we’re writing together has no end, and I can’t wait to turn every page with you. 
+
+
+
+
+            <b>Chapter 2: Theory of Evolution</b> 
+
+If I close my eyes and let my mind wander back in time, I can trace the quiet evolution of us. 
+If I calculate properly, I’ve been there with you for three of your birthdays, counting this one. I’m not including 2022’s January 15th because, honestly, we weren’t even close back then. I don’t think you were even in Bangladesh at the time, and we were still just strangers brushing past each other’s lives, and I doubt that I even crossed your mind. But by the middle of 2022, something shifted—we started talking as friends.
+And then came January 15th, 2023. By then, so much had changed. We had become such good friends, and I had already fallen so deeply, so hopelessly, and irreversibly in love with you. I remember that night so vividly, wanting to be the first person to wish you a happy birthday at 12:00 am. I wanted it so badly, like it was the most important thing in the world. But I remember failing to do that, and I swore to myself, "Next year, I have to be the first one to wish her." It felt like a promise I had made to myself, a little piece of hope to hold onto.
+But by January 15th, 2024, things were different again. We weren’t on the best terms, and it hurt—it hurt so much. Yet, even then, I couldn’t help but wish you happiness, even if it was from a distance. And now, as this birthday approaches, I can’t help but think about all these moments, about how time has woven our story with threads of love, longing, and growth.
+Sabiha, back in 2022, before I even thought about dating you, all I wanted was to have you as a friend. A good, good friend. A friend I could talk to about anything and everything, a friend who would be my person—the one I could call my “dear diary” type of person. And vice versa; I wanted to be what Arraf was to you. And even if we couldn’t be friends, I still just wanted you. I wanted you to be the one who would check in on me when I was feeling low, the one who would ask me how my day was, the one who would make me feel like I wasn’t alone. I didn’t care about anyone else, sabiha. It was you. It was always you.
+I wanted you to be someone who would let me know before they went offline, someone who would constantly keep me in the loop about where they were and what they were doing. I remember your 2023 birthday so clearly—you told me you’d be going out that day, and even though it made me a little sad because we couldn’t talk, I still felt so relieved. Knowing you’d told me beforehand, knowing you cared enough to let me know—it made me feel safe. It was a strange kind of comfort, like the uncertainty of you not being there was washed away just because you said something.
+I wanted you to be the person who would laugh and cry with me, someone who would text me with warmth and not the dryness I used to dread. I thought that maybe if we started dating, we could have the kind of connection I always dreamed of. The way we talk now, the way we sleep on call, the way we do everything together on video—that is what I’ve always wanted. Always. I wanted a love like this, a bond like this, and I wanted it with you.
+You know, sabiha, before you, I didn’t know what it meant to love someone. I didn’t know what it meant to fall in love, to tell someone those three words and mean them with every fiber of my being. I didn’t even believe in love. But you—you’ve taught me. You’ve shown me what it means to love and to be loved.
+Before you, I never knew how beautiful and terrifying it could feel to give your whole heart to someone. But with you, it feels effortless. You’ve shown me a kind of patience, a kind of kindness, and a loyalty that leaves me in awe every single day. You’ve made me believe in things I didn’t think were possible.
+You’ve been my teacher, my muse, my home, and my greatest joy. And now, as I think about your upcoming birthday, I want you to know just how deeply you’ve touched my life. Every moment we’ve shared, every word we’ve exchanged, every memory we’ve made—they’re all pieces of a story I never want to end. You are my story, sabiha. My favorite one.
+This chapter of our story is one I’ll cherish forever. But it’s only the beginning. There’s so much more to come, and I can’t wait to live every moment of it with you. 
+
+
+
+
+            <b>Chapter 3: Metamorphosis</b>
+
+If there’s one thing I’ve learned about love, it’s that it doesn’t happen all at once. It unfolds in moments—some big, some small, but all of them meaningful. And with you, Sabiha, every moment has been a revelation, a step closer to understanding just how deeply I love you.
+I often think back to those shy beginnings, how we started as nothing more than acquaintances and how, over time, we became something so much more. Do you remember those early days? I do. Every conversation felt like unwrapping a gift, every laugh, every lovey-dovey and cute-cringe conversations were melodies and moments I wanted to play on repeat.
+I remember how nervous I felt during the first nights we stayed up talking, both, over texts and on call. There was this magic in the air, a tension that wasn’t uncomfortable but exhilarating. I could feel my heart race with every word you messaged and uttered, with every soft laugh that made its way through the call and over the screen. We were so cautious back then, like two people stepping onto a frozen lake, testing its strength with each step.
+And yet, amidst all that caution, something extraordinary began to happen. We started to,  once again, open up to each other, peeling back the layers of who we were and of what we had become. I found myself telling you things I hadn’t told anyone else, sharing thoughts and dreams that had always felt too fragile to voice. And the more I shared, the more you listened—not just with your ears but with your heart.
+You became my safe space, Sabiha. You became the person I wanted to tell everything to, from the silly details of my day to the fears that kept me awake at night. And, yes, I did just that. I told you everything. And in return, you let me in. You trusted me with your thoughts, your feelings, your vulnerabilities. That trust was—and still is—the most precious gift you could have given me. It wasn’t long before those conversations turned into something deeper.
+I still remember the first time I told you I loved you. It wasn’t planned. The words just spilled out, unpolished and raw, because I couldn’t keep them in anymore. And when you said it back, some time later, when you told me you loved me too, it felt like the world had finally clicked into place.
+But it’s a shame: love, real love, isn’t just about the big declarations or the perfect moments. It’s about the quiet, everyday things. It’s about the way you smile when you see me, the way you laugh at my jokes even when they’re not that funny. It’s about the way you care for me, in all the little ways that matter most.
+It’s the way you say goodnight, always making sure I feel loved before I fall asleep. It’s the way you remember the smallest details about me, the things I didn’t even realize I’d shared. It’s the way you support me, cheering me on when I need it most and grounding me when my thoughts get too loud.
+Sabiha, loving you is like breathing—natural, necessary, and something I never want to stop doing, or quite frankly, something I can’t ever stop doing. I have always wanted to be the perfect boyfriend, you know? I thought that is only how I will be able to love with you all my might. However, you’ve taught me that love isn’t about perfection; it’s about effort. It’s about showing up for each other, even on the hard days. It’s about self-control. It’s about listening with your heart and understanding with you soul. It’s about making the right sacrifices and commitments. And it’s about choosing each other, over and over again, no matter what.
+You’ve shown me that love is about growth, about becoming better not just for yourself but for the person you love. And because of you, I’ve grown in ways I never thought possible. You’ve made me kinder, more patient, more understanding. You’ve made me want to be the best version of myself—not just for you, but because of you.
+This journey we’re on, this beautiful, messy, incredible journey—it’s my favorite thing in the world. And as I sit here, reflecting on everything we’ve shared, I can’t help but feel overwhelmed with gratitude. Gratitude for you, for us, for the love that has brought us here.
+Sabiha, you are my greatest adventure, my truest love, my everything. And I can’t wait to see where this journey takes us next. Because with you by my side, I know it will be nothing short of extraordinary.
+
+
+
+
+            <b>Chapter 4: Blooming Horizon</b>
+
+Sabiha, when I close my eyes and think of the future, all I see is you. It’s a vision that feels so vivid, so tangible, it’s as if I could reach out and touch it. And this future, our future—it’s everything I’ve ever dreamed of and more. It’s filled with light, laughter, and love, all centered around you, the most beautiful part of my life.
+I imagine us waking up in a home we’ve built together, sunlight streaming through the windows, your hair messy but still the most beautiful thing I’ve ever seen. I’ll make coffee—or at least attempt to—and maybe you’ll tease me about how terrible I am at it, but you’ll still drink it anyway because I made it for you. We’ll sit together, starting our day in the quiet comfort of each other’s presence, no words needed, just the unspoken understanding that this is where we’re meant to be.
+And when I think of us as parents, my heart feels so full it might burst. I can already see the way our kids will look up to you, the way their eyes will light up when you walk into the room. They’ll know what I’ve always known—that you are magic, that you have this rare ability to make anyone feel like they’re the most important person in the world.
+I can already picture the chaos and joy of family life—our kids running around the house, their laughter echoing in every corner. We’ll team up for bedtime stories, you taking one kid, me taking the other, but inevitably ending up all together because neither they or us wil want to be apart. 
+What about you, baby? Do you ever wonder what’s waiting for us out there? Because no matter what, I know it’s going to be worth it if it’s with you.
+I've thought about that too, you know—how we’ll sit down one day, maybe on a cozy evening, with our kids curled up next to us, wide-eyed and curious, asking, “How did you and Mom meet?” Honestly, just the thought of sharing our story with them gives me butterflies.
+I’d start with the beginning—how we were just two teenagers crossing paths, not even knowing how much we’d come to mean to each other. I'd tell them about those early days: how we slowly became friends, the inside jokes, the silly arguments, and the way my heart would race every time I saw you.
+Then I’d share the moment it all changed—the moment I realized it wasn’t just friendship; it was so much more. They’d be so surprised by the crazy plot twists. And then I’d tell them about April 4th, the day I gathered every bit of courage I had to tell you how I felt. How nervous I was, how I couldn’t find the right words, and how you still understood—because you always do.
+And, of course, I’d tell them about the first “I love you,” the shyness, the quiet moments on calls, the way we’d say those three little words like they held the whole universe between us. How those moments felt like magic—and how they still do. Because baby, our honeymoon is a never going to end.
+I’d laugh a little, maybe tease you about how stubborn you can be, and then say, “But that’s your mom— hot, sexy, fierce, kind, and the most incredible person I’ve ever met.” I’d tell them how you taught me what love really is—how to be patient, how to grow, and how to be better every day.
+And as we share all these moments, I hope they see what I see—a story of two people who weren’t perfect, but who chose each other over and over again. A story of love, resilience, and partnership. A story that made them possible.
+And then, when they ask, “But how did you know she was the one?” I’ll just smile, look at you, and say, “I’ve always known.”
+And the best part about all of this: one day, instead of me quietly putting together these small little surprises, it’s going to be a whole different story. It’s going to be a well-coordinated, top-secret operation led by a very determined Daddy with a team of little co-conspirators—our kids.
+We’ll huddle together in whispers, plotting and planning the grandest surprise for their mama. They’ll have all sorts of wild ideas, from balloons filling up the room to cakes with way too much frosting. And I’ll make sure every single one of their ideas comes to life because, at the end of the day, it’s all for you.
+You’ll probably suspect something’s up, catching glimpses of us sneaking around, sharing sly smiles, and poorly hiding the glitter trails. But when the big moment comes, and you walk into a room filled with your favorite flowers, handwritten notes, and the most chaotic yet adorable decorations, it’ll all be worth it just to see the smile on your face.
+And as you stand there, overwhelmed by the love bursting from every corner, our kids will run up, tugging at your hands, shouting, “Surprise, Mommy!” And I’ll be right there too, holding you close, thinking about how I got so lucky to have this little family with you. Because, Sabiha, whether it’s just me or me and our little dream team, making you happy will always be my favorite mission.
+And yet, it’s not just the big moments I look forward to. It’s the small, everyday things that make me most excited about our future. Grocery shopping together, debating which snacks to get but always ending up with way too many. Watching movies late at night, me sneaking glances at you because I’d rather look at you than the screen. Sitting on the balcony during a rainy day, sharing a blanket and a cup of tea, the silence between us as comforting as your voice, as we peacefully watch the clouds cry.
+Sabiha loves the rain.
+Sabiha, you are my dream, my partner, my everything. And while the thought of growing old with you fills me with joy, I’m even more grateful for the journey we’ll take to get there. I want to walk every step of life’s path with you—through the highs and the lows, the celebrations and the struggles. I want to be the one you lean on, the one who cheers you on, the one who loves you unconditionally, every single day.
+One day, we’ll look back on this moment—this letter, this love, this life we’re building—and we’ll smile. Because we’ll know that everything we’ve dreamed of, everything we’ve worked towards, was worth it.
+You are my beginning and my forever, Sabiha. And our future? It’s in bloom, just like us.
+
+
+
+
+            <b>Chapter 5: Weight of Desire</b>
+
+Jealousy, Sabiha—an emotion so heavy, so consuming, yet so deeply human. I know it has a way of creeping into your thoughts sometimes, especially when you think about my past relationships. I know those memories, though buried for me, still rise like ghosts for you, casting shadows that make your heart ache. And while I can’t erase the past, I can tell you this: your feelings are valid. They are understood. They are accepted.
+Sabiha, jealousy doesn’t scare me. Not yours. Not when it comes from a place of love and vulnerability. It doesn’t make you weaker in my eyes—it makes you more human, more beautiful. It’s proof of how deeply you care, how fiercely you love, and how much you want to protect what we have. And that, my darling, is something I admire about you.
+I know it’s not easy. I know the weight of it sometimes feels unbearable, the questions it forces you to ask yourself and me, the doubts it plants like unwelcome seeds. I see it in your eyes when those thoughts take hold, and it breaks my heart. Not because I feel burdened by your jealousy, but because I hate that you ever feel that kind of pain.
+You’ve told me about these feelings before, and every time, I’ve tried to reassure you. But let me say it again, as clearly and as loudly as I can: you are my present, my future, my forever. My past doesn’t hold a candle to the light you bring into my life. Those memories are faded photographs, distant echoes of a time before I even knew what real love was.
+What we have now? It’s everything. You are everything. You’re the one I want to wake up to, the one I want to laugh with, cry with, grow old with. No one else even comes close.
+I’ve never felt this kind of security, this kind of peace, with anyone else. You’ve given me a love that feels steady and unwavering, a love that makes me want to be the best version of myself every single day. And I hope you know that you’ve never given me any reason to doubt you. Not once. Not ever.
+I want you to feel that same security with me, Sabiha. I want you to know, deep down in your soul, that my heart belongs to you and only you. That every word I write, every promise I make, every moment we share—it’s all for you.
+I don’t just love you because you’re beautiful, though you are breathtaking. I don’t just love you because of the way you love me, though it’s the greatest gift I’ve ever received. I love you for you—for your mind, your heart, your soul, your flaws, your fears, your everything.
+Jealousy might weigh on you, but I hope this love we share lifts you higher. I hope it reminds you that you are enough, more than enough. You are my everything, Sabiha. And no ghost of the past could ever take that away.
+And while I can’t rewrite the past, I promise to build a future with you that’s so full of love, joy, and security that it overshadows anything that came before. You are my first real love, sabiha. You’re the one who’s shown me what it means to love deeply and completely. No one else even comes close.
+So if those thoughts creep in, if the shadows of the past try to make their way into your heart, please let me be there for you. Talk to me. Let me remind you that you’re the one I choose, every single day, in every single way. And even if you don’t bring it up, know that I’m always thinking of ways to make you feel as secure and cherished as you truly deserve to feel.
+So let the weight of jealousy come if it must, but know that you don’t have to carry it alone. I’m here, always, ready to share the burden, ready to remind you that you are the love of my life. The only one. The forever one.
+You, Sabiha, are the woman I’ll choose every day for the rest of my damn life. And no past, no doubt, no fleeting shadow could ever change that.
+Furthermore, jealousy, Sabiha—it’s not just something I understand in you, it’s something I feel, too. Fiercely. Unapologetically. Not because I don’t trust you, but because the depth of my love for you has a way of making everything and everyone else seem like a threat. I don’t care if it’s one of your closest friends, a random guy in school, a girl, or even a cat purring at your feet—every single being that gets even a sliver of your attention makes me jealous in a way I can’t fully explain.
+Do you know what it feels like to be consumed by this? To see someone else laugh at your jokes or catch a glimpse of the smile that’s meant to be mine? It’s maddening. It’s as if my heart is waging war against my rationality. I know you’re loyal. I know you’re mine. But jealousy doesn’t listen to reason. It feeds off love, and my love for you is endless, overflowing, unstoppable.
+I get jealous of my own friends when they talk to you. The way they make you laugh or the casual ease with which they exist around you—it makes my chest tighten. And even your cousins, who I know are family, make me feel like there’s a little competition happening in my head. I’m jealous of every single person who gets to experience you, even if it’s just for a moment.
+It’s not just because I love you; it’s because I want all of you. Every smile, every laugh, every moment. I want to be the one you turn to, the one who gets to hear your thoughts, see your smile, feel your presence. And the thought that anyone else gets even a fraction of what I have? It kills me.
+But this jealousy isn’t rooted in doubt. It’s rooted in the sheer intensity of my love for you. You are so precious to me, so irreplaceable, that the idea of anyone else sharing in the magic of you feels unbearable. It’s like I’m standing in a room full of treasures, knowing you are the rarest gem of all, and I can’t bear the thought of anyone else admiring what’s mine.
+And yet, I try to remind myself that this feeling is a testament to how much I adore you. It’s not about control or insecurity—it’s about how deeply intertwined my heart has become with yours. You are my universe, So yes, I get jealous. I get jealous of everyone who has ever been lucky enough to share a moment with you, and I get jealous of everyone who ever will.
+But even in my jealousy, I know this: you’ve chosen me. You’ve given me a love so deep and so real that it feels like a dream. You’ve shown me that no matter who else may be around, it’s me you’ve chosen to share your life with. And for that, I am endlessly grateful.
+So if you ever catch me looking at you a little too intently, or if I ask one too many questions about who you were talking to or why they made you laugh, know that it all comes from a place of love. A place of wanting to be your everything, because you are already mine.
+You are my Sabiha. My light, my love, my forever. And though jealousy may sometimes weigh on my heart, it’s a small price to pay for the privilege of loving you. Because you, my darling, are worth every single pang of jealousy, every single ache of longing. You are my world, and I wouldn’t trade this love for anything.
+
+
+
+
+            <b>Chapter 6: Love That Teaches</b>
+
+Sabiha, if I were to map out everything I’ve learned in life, the most profound lessons would all lead back to you. Loving you has been my greatest education—one that has reshaped my heart, my mind, and my very understanding of the world.
+Before you, I didn’t truly grasp what it meant to love someone or to be loved in return. I didn’t understand the depth, the patience, or the selflessness it required. Love always seemed like an abstract idea, something people talked about but never something I felt grounded in. But with you, it’s all so different. You’ve shown me a love that is raw, unfiltered, and impossibly beautiful.
+Through you, I’ve learned the value of vulnerability. You’ve taught me that it’s okay to let my guard down, to let someone in completely. You’ve seen parts of me that I once kept hidden from the world, and instead of running away, you held me closer. You’ve made me feel seen and understood in ways I never thought possible, and for that, I will always be grateful.
+You’ve also taught me the beauty of patience. Sabiha, you have this way of holding space for people, of allowing them to grow and evolve at their own pace. With you, I’ve learned that love isn’t about rushing or demanding—it’s about waiting, trusting, and letting things unfold naturally. You’ve shown me that real love doesn’t try to fix or change someone; it simply supports them as they become the best version of themselves.
+And then there’s your kindness, a lesson in itself. You love with such an open and giving heart, and it inspires me every day to be better—not just for you, but for everyone around me. Your empathy, your compassion, your ability to care so deeply—it’s taught me what it means to truly connect with someone, to be there for them in every sense of the word.
+Even in moments of jealousy or doubt, you’ve taught me about resilience and reassurance. Your retroactive jealousy, something that might make others falter, has only deepened my understanding of love. You’ve shown me how to navigate those moments with honesty and tenderness, how to address insecurities without letting them define us. In doing so, you’ve taught me that love is not about perfection—it’s about effort, about showing up even when it’s hard.
+And, Sabiha, you’ve taught me what it means to dream. Before you, my visions of the future were hazy and uncertain. But with you, they’ve taken on a vivid clarity. You’ve taught me to hope, to imagine, to believe in a life filled with joy, laughter, and endless possibilities. You’ve given me a reason to look forward, a reason to build and strive and grow.
+Your beauty, both inside and out, is a lesson in itself. I’ve learned to see the world differently through your eyes, to find magic in the mundane and light in the darkest corners. You’ve shown me that love isn’t just about grand gestures or perfect moments—it’s about the little things. It’s about the way you laugh, the way you say my name, the way you just exist and make everything around you brighter.
+Sabiha, this love we share—it teaches me something new every single day. It’s not always easy, and it’s not always perfect, but it’s real. It’s the kind of love that changes you, that makes you want to be better, that makes you grateful just to be alive and to share this life with someone so incredible.
+You are my greatest teacher, my sweetest lesson, and my most cherished truth. And for that, I love you more than words could ever express. 
+
+
+
+
+            <b>Chapter 7: Minute and Mundane</b>
+
+Sabiha, have you ever noticed how love doesn’t just bloom in grand gestures or monumental moments? Instead, it thrives in the tiniest, most unassuming details—the small things that most people might overlook but that mean everything to someone who truly loves you.
+For me, the symphony of my love for you plays in the small, quiet moments. It’s in the way you say "hehehe" when something genuinely amuses you, or the way you absentmindedly type out "awh," "awe," or "aww," each one laced with a softness that feels like a gentle hug across the screen. It’s the "lalala" and "balalala" you let slip into our conversations when you’re playful, and that little "ooo" when something catches your attention—it’s such a simple sound, but it’s you, and that makes it extraordinary.
+Even the smallest texts—"okay," "hm," or a single emoji—carry so much weight because they come from you. Every little thing you say, every random expression, feels so special, so uniquely you. They’re not just words to me; they’re pieces of you, fragments of your soul that you share with me, and I cherish them like treasures.
+And forget everything else—when you say you like me, even in the driest tone, even with the simplest words, my entire world stops. Every single time you type those three words, "I love you," it feels like the entire universe conspires to remind me that I am, without a doubt, the luckiest man alive. It’s not just a phrase to me—it’s a galaxy of emotions packed into a few keystrokes. It brightens my day, fills my heart, and lightens my soul. Every worry, every stress, every doubt just melts away because you said it—because those words came from you.
+But it’s not just your words; it’s the way you are. The way you call me "pakhi," the way your voice softens when you’re being sweet, the way you laugh—it all resonates in my heart like the melody of a favorite song, one I never want to end. Even when you tease me or say something silly, I hold onto it like the most valuable treasure. Every "hehehe," every random "awww" or "ooo," stays with me long after our conversations end, playing like a tune I can’t—and don’t want to—forget.
+And oh, the compliments. Sabiha, every single time you say something nice about me—when you call me cute, sweet, handsome, hot, perfect or whatever—it’s like I’m floating. It’s not just about how I look or sound; it’s the ones about who I am. The way you see me, the way you understand me—it’s the kind of validation that sinks deep into my soul and replays over and over, especially when I’m feeling down.
+Even your smallest actions speak volumes. The way you turn on your camera during calls, even when you don’t feel your best, just because you know it makes me happy. The way you smile, even through the screen, and suddenly the distance between us doesn’t feel so vast. The way you hold my hand when we’re together, as if to say, "I’m here, and I’m not letting go." It’s in the little ways you show up for me, time and time again, effortlessly turning ordinary moments into something extraordinary.
+You’ve shown me that love isn’t found just in the grand, dramatic gestures—it’s in the quiet, the mundane, the everyday. It’s in the way you say my name, the way you share your thoughts, the way you exist simply and beautifully as you. And more than anything, it’s in the way you inspire me to notice the little things, to find joy in the details, to appreciate life as it happens.
+So yeah, Sabiha, every little thing you say and do—even the random "awws," "lalalas," and "ooos"—makes my day, my night, my everything. You’ve turned my world into something brighter, more beautiful, more alive. And I’ll never stop appreciating every word, every sound, every piece of you that you choose to share with me. Because in those little moments, I am reminded, again and again, that I’m the luckiest man alive.
+So, here’s to the symphony of small things. To every "hehehe," every "aww," every smile, every touch, every glance. To all the little moments that make up this big, beautiful love we share. To you, Sabiha—the one who turns the smallest things into the grandest gestures.
+I love you for all of it. For the grand and the tiny, the loud and the quiet, the seen and the unseen. I love you for the way you make my world feel whole, one small, precious moment at a time.
+
+
+
+
+            <b>Chapter 8: Hundred and Sixty Ways</b> 
+
+Sabiha, how do you tell someone you love them in a way that feels infinite? In a way that transcends time, space, and even the limits of language itself? For you, I wanted to try—because “I love you” isn’t just a phrase; it’s a declaration, a celebration, a promise. 
+Sabiha, today feels like the perfect moment to remind you of something you already know—how endlessly and deeply I love you. But saying it in just one language doesn’t feel like enough. Because today, you’re turning 16, and what better way to celebrate your beautiful journey into 16 years of life than by expressing my love for you in 160 different languages. Each “I love you” represents a piece of my heart, a fragment of my soul, stretching across cultures and countries, capturing the universality of the feelings I hold for you: 
+i. English: I love you
+ii. Spanish: Te amo
+iii. French: Je t’aime
+iv. Italian: Ti amo
+v. Bengali: Ami tomake bhalobashi
+vi. Chinese (Mandarin): Wo ai ni
+vii. Japanese: Aishiteru
+viii. Korean: Saranghae
+ix. Arabic: Ana uhibbuk
+x. Hindi: Main tumse pyaar karta hoon
+xi. Greek: S’agapo
+xii. Turkish: Seni seviyorum
+xiii. Swahili: Nakupenda
+xiv. Russian: Ya tebya lyublyu
+xv. Portuguese: Eu te amo
+xvi. German: Ich liebe dich
+xvii.Tamil: Naan unnai kaadhalikkiren
+xviii. Tagalog: Mahal kita
+xix. Dutch: Ik hou van jou
+xx. Hawaiian: Aloha wau ia ‘oe
+xxi. Maori: Ka aroha ahau ki a koe
+xxii. Quechua: Kuyayki
+xxiii. Navajo: Ayóó anííníshní
+xxiv. Persian: Dooset daram
+xxv. Urdu: Mein tumse mohabbat karta hoon
+xxvi. Danish: Jeg elsker dig
+xxvii. Finnish: Rakastan sinua
+xxviii. Swedish: Jag älskar dig
+xxix. Norwegian: Jeg elsker deg
+xxx. Thai: Chan rak khun
+xxxi. Vietnamese: Anh yêu em
+xxxii. Malay: Saya cintakan awak
+xxxiii. Filipino: Iniibig kita
+xxxiv. Swahili: Nakupenda
+xxxv. Yoruba: Mo nifẹ rẹ
+xxxvi. Hausa: Ina son ku
+xxxvii. Zulu: Ngiyakuthanda
+xxxviii. Afrikaans: Ek is lief vir jou
+xxxix. Icelandic: Ég elska þig
+xl. Irish: Tá grá agam duit
+xli. Welsh: Rwy’n dy garu di
+xlii. Scottish Gaelic: Tha gaol agam ort
+xliii. Czech: Miluji tě
+xliv. Slovak: Ľúbim ťa
+xlv.Hungarian: Szeretlek
+xlvi. Polish: Kocham cię
+xlvii. Croatian: Volim te
+xlviii. Serbian: Volim te
+xlix. Bosnian: Volim te
+l. Slovenian: Ljubim te
+li. Albanian: Të dua
+lii. Macedonian: Te sakam
+liii. Romanian: Te iubesc
+liv. Latvian: Es tevi mīlu
+lv. Lithuanian: Aš tave myliu
+lvi. Estonian: Ma armastan sind
+lvii. Belarusian: Ya tabe kahayu
+lviii. Ukrainian: Ya tebe lyublyu
+lix. Hebrew: Ani ohev otach
+lx. Amharic: Ēwedihalehu
+lxi. Somali: Waan ku jeclahay
+lxii. Pashto: Za ta sara meena laram
+lxiii. Khmer: Khnhom sralanh anak
+lxiv. Lao: Khony hak chao
+lxv. Burmese: Mainnkoi nkohkyar
+lxvi. Sinhala: Mama oyāṭa ādareyi
+lxvii. Kannada: Naanu ninna preetisuttene
+lxviii. Malayalam: Njan ninne snehikkunnu
+lxix. Gujarati: Hu tane prem karu chu
+lxx. Assamese: Moi tomaak bhaal paau
+lxxi. Odia: Mu tumaku bhala paye
+lxxii. Tibetan: Nga kayrang-la gawpo yin
+lxxiii. Nepali: Ma timilai maya garchu
+lxxiv. Kurdish: Ez hej te dikim
+lxxv. Basque: Maite zaitut
+lxxvi. Catalan: T’estimo
+lxxvii. Galician: Quérote
+lxxviii. Ladin: A ti te vuei ben
+lxxix. Sami: Mun ráhkistan du
+lxxx. Breton: Me az kar
+lxxxi. Corsican: Ti tengu cara
+lxxxii. Luxembourgish: Ech hunn dech gaer
+lxxxiii. Maltese: Inħobbok
+lxxxiv. Lingala: Nalingi yo
+lxxxv. Igbo: A hụrụ m gị n’anya
+lxxxvi. Wolof: Nopp naa la
+lxxxvii. Xhosa: Ndiyakuthanda
+lxxxviii. Shona: Ndinokuda
+lxxxix. Tswana: Ke a go rata
+xc. Kinyarwanda: Ndagukunda
+xci. Setswana: Ke a go rata
+xcii. Tigrinya: Yefkireki
+xciii. Maori: Ka aroha ahau ki a koe
+xciv. Samoan: Ou te alofa ia te oe
+xcv. Tongan: ‘Oku ou ‘ofa kiate koe
+xcvi. Fijian: Au domoni iko
+xcvii. Tahitian: Ua here vau ia oe
+xcviii. Palauan: Ak diak a oub
+xcix.  Chamorro: Hu guaiya hao
+c. Esperanto: Mi amas vin
+ci. Elvish: Gi melin
+cii. Dothraki: Anha zhilak year
+ciii. Klingon: qamuSHa’
+civ. Sindarin (Elvish): Gi meleth nin
+cv. Vulcan: Nash-veh k’du
+cvi. Hmong: Kuv hlub koj
+cvii. Lao: Khoi hak chao
+cviii. Haitian Creole: Mwen renmen ou
+cix. Yiddish: Ikh hob dikh lieb
+cx. Cherokee: Gvgeyuhi
+cxi. Ojibwe: Gi zah gin
+cxii. Cree: Nitanisni
+cxiii. Inuktitut: Nagligivagit
+cxiv. Greenlandic: Asavakkit
+cxv. Malagasy: Tiako ianao
+cxvi. Dzongkha: Nga gi che
+cxvii. Farsi: Dooset daram
+cxviii. Tibetan: Nga kayrang-la gawpo yin
+cxix. Sardinian: Ti amu
+cxx. Occitan: T’aimi
+cxxi. Faroese: Eg elski teg
+cxxii. Walloon: Dji t’aim
+cxxiii. Frisian: Ik hâld fan dy
+cxxiv.  Ganda: Nkwagala
+cxxv. Swati: Ngiyakutsandza
+cxxvi. Venda: Ndi a ni funa
+cxxvii. Tsonga: Ndzi rhandza wena
+cxxviii. Zaza: Ez te hezdikim
+cxxix. Balinese: Tiang tresna sareng ragane
+cxxx. Batak (Toba): Holong rohangku tu ho
+cxxxi. Sundanese: Abdi bogoh ka anjeun
+cxxxii. Acehnese: Geutanyoe chit uroe
+cxxxiii. Javanese: Aku tresno sampeyan
+cxxxiv. Minangkabau: Adek cintokan iko
+cxxxv. Buginese: Iyaro ta’
+cxxxvi. Malagasy: Tiako ianao
+cxxxvii. Cham: Hơnơw mơnưnă
+cxxxviii. Hmong: Kuv hlub koj
+cxxxix. Bislama: Mi lavem yu
+cxl. Tok Pisin: Mi laikim yu
+cxli.Papiamento: Mi ta stimabo
+cxlii. Sesotho: Kea u rata
+cxliii. Shanghainese: Wu ai li
+cxliv. Cantonese: Ngo oi nei
+cxlv. Taiwanese Hokkien: Wa ai li
+cxlvi. Wu Chinese: Ngu ang ngi
+cxlvii. Burmese: Chit pa de
+cxlviii. Khmer: Sralanh oon
+cxlix. Lao: Khony hak chao
+cl. Uzbek: Seni sevaman
+cli. Kazakh: Men seni jaksy kuremyn
+clii. Kyrgyz: Men seni syium
+cliii. Tajik: Man turo dost medoram
+cliv. Turkmen: Men seni söýýärin
+clv. Uighur: Men seni yaxshi körimen
+clvi. Mongolian: Bi chamd khairtai
+clvii. Georgian: Mikvarhar
+clviii. Armenian: Yes sirum em qez
+clix. Azeri: Mən səni sevirəm
+clx. Pashto: Za ta sara meena laram
+
+So, my darling, my beautiful Sabiha, on this day that marks your 16 years of life, I give you these 160  ways to say I love you. Every phrase is a testament to the infinity of my love for you. You are my everything in every language, every dialect, and every whisper of this universe. Always remember, in every way possible and beyond words, I love you.  
+And the list goes on and on. These words are my tribute to you, a reflection of how universal and boundless my love for you is. Because, Sabiha, if love were a language, you’d be my native tongue. You’d be the words I dream in, the poetry I breathe, the sentences I live by.
+But even with all these languages at my disposal, I often feel like no words could ever fully capture the way I feel about you. How do you describe the way my heart races when I see you smile? How do you put into words the comfort of hearing your voice, the warmth of your laugh, the way the world feels softer and brighter when you’re around?
+Each time I tell you “I love you,” it carries the weight of everything I’ve ever felt for you, everything I will ever feel. It’s not just a statement—it’s a universe of emotions, memories, dreams, and hopes all condensed into three little words.
+And yet, sometimes, even those three words don’t feel like enough. That’s why I find myself writing you letters, sending you messages, and creating moments like this—because no matter how many times I say it, I want you to hear it again and again. I want you to know it, to feel it, to never doubt for even a second how much you mean to me.
+Sabiha, you’re my world. You’re the song my heart sings, the story my soul writes, and the language my love speaks. Across every border, every culture, every tongue—my love for you remains the same. Infinite, boundless, and uniquely yours.
+So here’s to “I love you” in every way it can be said. But most importantly, here’s to “I love you” in the way I say it to you—with every beat of my heart, with every thought in my mind, with every piece of my soul. Always and forever, I love you.
+
+
+
+
+            <b>Chapter 9: Cosmos and Cornea</b>
+
+Sabiha, every time I look into your eyes, it feels as though I am staring into a universe crafted just for me—a boundless expanse of beauty, mystery, and light. Your eyes hold galaxies, endless and eternal, drawing me in and wrapping me in their quiet brilliance. They are not just windows to your soul; they are constellations of everything I have ever sought in this life.
+Do you know what it feels like to be lost and found at the same time? That’s what happens every time I meet your gaze. In those moments, the world fades away. The noise, the chaos, the doubts—they all dissolve into the stillness of your eyes. And in that stillness, I find peace. I find home.
+But it’s not just the way your eyes look. It’s what they hold. Your kindness, your strength, your vulnerability—they all shine through, like stars lighting up the darkest skies. Your eyes speak volumes, even in silence. They tell me of your love, your fears, your dreams. They tell me stories of a soul so beautiful, so profound, that I can’t help but be mesmerized.
+There’s a softness to the way you look at me sometimes, a tenderness that makes me feel like the most cherished person in the world. And then there are those playful glances, the ones that make me laugh, that remind me of how lucky I am to share these little moments with you. Every look is a gift, a reminder of just how extraordinary you are.
+Sabiha, you are the most beautiful person I have ever laid my eyes on. From the delicate curve of your thick eyebrows to the way your long lashes frame those mesmerizing eyes, everything about you is perfection. Your beauty is effortless, natural, breathtaking. It’s the kind of beauty that doesn’t just catch the eye but captures the heart.
+But beyond the physical, there’s a light in your eyes that is entirely your own. It’s a reflection of the person you are—the kind, thoughtful, passionate soul who has completely changed my life. Your eyes remind me of your strength, of how you’ve faced challenges and grown into someone so resilient, so admirable.
+And then there’s the way your eyes light up when you’re happy, when you’re excited, when you’re laughing. It’s like the whole world brightens with you. I live for those moments, Sabiha. I live for the sparkle in your eyes when you’re talking about something you love, for the glow that appears when you’re with the people you care about.
+I remember the first time I truly looked into your eyes, really looked. It was as though time stopped. In that moment, I knew I had found something extraordinary. I knew I had found you. And now, every time our eyes meet, it feels like a silent promise—a promise of love, of loyalty, of forever.
+You once told me that you don’t fully understand why I love you, that you can’t always comprehend the depth of my feelings. Sabiha, if you could see yourself through my eyes, you would never doubt it. You would see the woman who has given me a love so profound, so all-encompassing, that it feels like a miracle.
+Your eyes hold a universe, Sabiha—a universe I want to explore for the rest of my life. They are my compass, my anchor, my everything. And as I look into them, I know, without a doubt, that I have found the greatest treasure this world could ever offer.
+You are my universe, Sabiha. And every time I see you, every time I look into your eyes, I fall in love all over again.
+
+
+
+
+            <b>Chapter 10: Touch</b>
+
+Sabiha, every time your skin brushes against mine, it feels like the universe pauses, holding its breath to witness something sacred. Your touch is a language, one that speaks directly to my soul, filling the spaces where words often fall short. It’s not just the physical sensation; it’s the emotions, the connection, the warmth that come with it.
+I know we haven’t shared as many physical moments as other couples might have. We haven’t had the kisses, the passionate embraces, or even the casual physical closeness that others take for granted. But, baby, that doesn’t make what we have any less meaningful. If anything, it makes every single touch, every single moment, even more special.
+I think back to the times we held hands—those fleeting seconds when your fingers intertwined with mine. Do you remember the first time we did? My heart was racing so fast I could barely breathe. It wasn’t just about holding hands; it was about holding a piece of you, feeling your presence in a way that words could never express.
+And the hugs, Sabiha—those hugs. Each one is a memory etched into my heart. I can still feel the way your arms wrapped around me, the warmth of your body pressed against mine, the way your embrace felt like home. I remember the first time you hugged me, how I froze for a second because I couldn’t believe it was real. I couldn’t believe someone as extraordinary as you would share that moment with me.
+Then there are those forehead kisses—those gentle, fleeting gestures that carry so much meaning. Every time I kiss your forehead, it’s like my soul is whispering, “I love you, I cherish you, I’m here for you.” It’s my way of saying all the things I feel but can’t put into words. And every time you let me kiss your forehead, it feels like you’re letting me into your world, trusting me with a piece of your heart.
+Sabiha, every touch with you feels like magic, like I’m holding something sacred. The softness of your skin, the curves of your body—every
+ time my hands trace your curves, every time I feel the softness of your skin, I’m reminded of just how lucky I am. The thought that you’re letting me, of all people, be this close to you—it’s humbling, and it’s beautiful. It makes me feel like the luckiest man alive.
+I know I get shy sometimes, and honestly, I’m still in disbelief that I get to experience this with you. But that shyness is paired with so much joy, baby. Joy because it’s you. Because your body, your warmth, your everything—it feels like a gift. And it’s not just the physical—it’s the way you make me feel, like I’m holding something sacred.
+And when you touch me back—when your hands graze my face, trace my chest, my arms, even my groin—it’s like electricity surging through me. It’s not just about desire; it’s the way you make me feel seen, wanted, and connected in the most intimate way. Every moment, every touch, reminds me just how much I love you, and it leaves me in awe of the magic we share.
+Even the smallest touches mean the world to me. The way your hand lingers on mine when you pass something to me, the way your shoulder brushes against mine when we sit close together, the way your fingers absentmindedly play with my sleeve—it all matters. It all reminds me that you’re real, that you’re here, that we’re connected in a way that goes beyond the physical.
+Sabiha, every touch from you is a blessing. Every moment we’ve shared, no matter how small or fleeting, is a treasure I hold close to my heart. You make me feel like the luckiest man alive, not because of the number of physical moments we’ve had, but because of the depth and meaning behind each one.
+I don’t need grand gestures or constant physical affection to feel loved by you. Just seeing you turn on your camera during a call, just hearing your voice, just knowing that you’re there—it’s enough. It’s more than enough. But when you do touch me, when you let me hold you or hug you, it feels like the entire universe aligns in that moment, like everything is exactly as it should be.
+I love the way you make even the smallest moments feel monumental. You could simply brush a strand of hair away from your face, and I’d find myself captivated, wishing I could be the one to do it for you. Your presence alone is enough to make my heart race, but your touch—it’s like nothing else in the world.
+Sabiha, I love you in every way possible. I love the way you think, the way you speak, the way you care. But there’s something uniquely magical about the way you touch. It’s not just physical; it’s emotional, spiritual, profound.
+You’ve given me a love so pure, so beautiful, that it feels like a gift with every single touch. And one day, I know we’ll share even more of those moments. We’ll have the hugs that last longer, the kisses that linger, the kind of closeness that speaks volumes without a single word.
+Until then, I’ll cherish every single moment we’ve already had and every single one yet to come. Because with you, even the smallest touch holds the power to move mountains, to heal wounds, to create memories that will last a lifetime.
+
+
+
+
+            <b>Chapter 11: Beyond Touch</b>
+
+Sabiha, my love, there are moments when words fail me, when the emotions I feel for you swell so deeply within me that I struggle to put them into coherent thoughts. Loving you isn’t just a feeling—it’s a whole universe of experiences, sensations, and depths that I never thought I was capable of exploring.
+There’s this unexplainable pull you have on my soul, this gravity that keeps me tethered to you in the most beautiful way. It’s not just about the happiness you bring me, though that’s immeasurable—it’s about the way you’ve taught me to feel so profoundly, so completely. With you, emotions aren’t just fleeting moments; they’re layered, intricate, and alive.
+Every time I look into your eyes, I’m met with a depth I can’t begin to describe. Your gaze holds entire galaxies, Sabiha, and when you look at me, it feels like you’re seeing every part of me—my heart, my soul, and even the parts of myself I didn’t know existed. It’s a feeling that’s both grounding and overwhelming, like standing on the edge of the ocean, knowing it’s vast and endless, yet feeling safe because I’m with you.
+I feel your love in the quiet moments, in the way you listen when I speak, in the way you laugh at my dumb jokes, and in the way you care for me so selflessly. You may not always say it, but I feel it in the warmth of your touch, in the softness of your voice, and in the little things you do that make my life so much brighter.
+You once told me that you don’t always understand why you love me, that it’s this inexplicable feeling you can’t put into words. And, Sabiha, I get it now because I feel the same way about you. How do you describe something so vast, so consuming, and so pure? How do you explain the way your heart swells at the thought of someone, the way their presence feels like both home and adventure?
+Loving you has taught me so much, Sabiha. It’s taught me to be patient, to be kind, to be vulnerable. It’s taught me that love isn’t just about grand gestures or poetic words—it’s in the small, everyday things. It’s in the way you remember my favorite things, the way you notice when I’m feeling off, and the way you always find a way to make me smile, even on my worst days.
+You’ve made me feel emotions I didn’t know I was capable of. The joy I feel when I’m with you, the ache I feel when we’re apart, the pride I feel in your successes, and the deep, unwavering love I feel for you—it’s all because of you. You’ve opened up a part of my heart that I didn’t even know was locked away, and for that, I’m eternally grateful.
+I remember the times I’ve cried tears of joy because of you, the way my heart swells to the point where it feels like it might burst. It’s not just the big moments, Sabiha—it’s the little things. It’s the way you say my name, the way you look at me, and the way you make me feel like I’m the most important person in the world.
+There’s a quote by Rainer Maria Rilke that says, “For one human being to love another: that is perhaps the most difficult of all our tasks, the ultimate, the last test and proof, the work for which all other work is but preparation.” And, Sabiha, loving you feels like the most natural thing in the world, but also the most profound. It feels like the culmination of everything I’ve ever done, every choice I’ve ever made, leading me to you.
+I don’t just love you, Sabiha—I feel you. I feel your presence in everything I do, in every thought I have. I feel your warmth in the sunlight, your laughter in the breeze, and your love in every beat of my heart. You are the thread that ties everything in my life together, the constant that keeps me grounded, and the dream that keeps me reaching for more.
+You are my depth, my everything. You’ve shown me that emotions aren’t something to fear but something to embrace. You’ve taught me that love is worth every risk, every challenge, and every moment of vulnerability. With you, I’ve found a depth of emotion that I never knew was possible, and I wouldn’t trade it for anything in the world.
+Sabiha, you are my heart, my soul, and the deepest part of me. You are the emotion I carry in every breath, the love I hold in every beat of my heart, and the person who makes my life worth living. For all of this, and so much more, I love you endlessly.
+
+
+
+
+            <b>Chapter 12: Love That Blames</b>
+
+Sabiha, there’s a funny thing about love—true, consuming love. It demands to be felt in every fiber of your being, and it refuses to follow the rules of logic or reason. And with that love comes blame, but not the kind that hurts. No, this blame is different. It’s the kind of blame that makes me smile even when I’m overwhelmed, the kind that makes me shake my head at how utterly helpless I am when it comes to you.
+I blame you for everything, and I always will. I blame you for the way my heart skips a beat every time I hear your voice. I blame you for making my days brighter just by showing up at school. I blame you for turning my world upside down in the best possible way. It’s your fault that I can’t look at the stars without thinking about the galaxies in your eyes, that every love song now feels like it was written for us.
+I blame you for making me the happiest man alive. I blame you for making me laugh at the stupidest things, for making me cry tears of joy just by being you. It’s all your fault, Sabiha. You’ve ruined me in the most beautiful way, and I wouldn’t have it any other way.
+You’ve turned me into someone who sees the world differently, someone who can’t help but find beauty in every little thing because it reminds me of you. A random sunset isn’t just a sunset anymore; it’s a reminder of the warmth you bring into my life. The sound of laughter isn’t just a sound; it’s a memory of how you light up my world with yours.
+And then there’s the blame that comes with missing you. I blame you for the ache in my chest when we’re apart, for the way time drags when you’re not around. It’s your fault that I long for you so deeply, that even the smallest moment without you feels like an eternity.
+But, baby, this blame isn’t a burden—it’s a blessing. It’s a constant reminder of how much you mean to me, of how deeply you’ve woven yourself into every corner of my life. It’s proof that my love for you isn’t just skin-deep; it’s rooted in the very core of who I am.
+I blame you for giving me a love so profound that it changes everything. I blame you for making me dream of a future where it’s just us, building a life together, sharing every triumph and weathering every storm. I blame you for making me want things I never thought I’d want, for making me believe in things I never thought I’d believe in.
+Sabiha, you’ve given me a love that blames in the best way possible. A love that doesn’t seek to control or diminish but instead amplifies every joy, every moment, every feeling. A love that blames you for all the happiness, the hope, the wonder you’ve brought into my life.
+So yes, I’ll always blame you—for every smile, every laugh, every moment of pure bliss. I’ll blame you for making me believe in love, for showing me what it truly means to care for someone so deeply that it feels like your heart might burst.
+And, my love, I’ll keep blaming you for the rest of my life. Because if being this happy, this fulfilled, this in love is anyone’s fault, it’s yours. And I wouldn’t change a thing.
+
+
+
+
+            <b>Chapter 13: Oaths</b>
+
+Sabiha, my sweetest love, promises often feel like fragile threads, words spoken into the wind, but with you, they are the very foundation of everything I hold sacred. Each promise I make to you is unshakable, a vow written not just in words but in every beat of my heart. They are boundless, infinite, and they stretch across every imaginable horizon of our future.
+I promise you, Sabiha, that I will marry you. It doesn’t matter how far the future takes us, or how uncertain the journey might be. I don’t care if you’re halfway across the world or if life has thrown challenges our way that seem insurmountable—I will find you. I will stand before you, unwavering in my love, and I will make you mine forever.
+It’s not just about the grand gestures, though, Sabiha. My promises live in the quiet moments too. I promise to always ask, “How was your day?” because your happiness will forever be my priority. I promise to tell you, “Call me when you’re home,” because your safety will always be at the forefront of my mind. I promise to make you coffee on cold mornings, to press your head when you’re tired, to save you food when I find something delicious, and to ask for your opinion on even the smallest decisions because your voice will always matter to me.
+One day, I’ll hold your hand as we sit with our kids, helping them craft birthday cards for their mama, whispering to them about how much I adore you. Together, we’ll plan surprises so grand they’ll leave you speechless. I promise to create a life with you where every single day feels like a celebration of the love we share.
+I promise to never give up on you, no matter what. Even if there are days when you might feel unworthy or unsure, I will remind you, again and again, of the incredible person you are. I’ll be there, holding you through every storm, celebrating every victory, and standing by your side through every challenge.
+Sabiha, I promise to always look at you the way I do now—with wonder, with admiration, with a love so overwhelming it feels almost impossible to contain. I promise to cherish every part of you, from your radiant smile to the way you wrinkle your nose when you laugh, from your brilliant mind to your compassionate heart.
+I promise to build a home with you, not just a physical one, but a home in every sense of the word—a place where you feel safe, loved, and cherished. I promise to be your partner in everything, to share your dreams and to dream with you, to support you through every step of your journey, and to celebrate every achievement, big or small.
+And if life ever becomes too heavy, I promise to carry that weight with you, to lighten your burden however I can. I promise to make you laugh when you feel like crying, to hold you when words aren’t enough, and to remind you every single day of just how deeply you are loved.
+Sabiha, I promise to love you through every season of life. Through the springtimes of joy and growth, through the summers of laughter and warmth, through the autumns of change and reflection, and even through the winters of hardship and challenge. My love for you isn’t conditional; it’s steadfast and eternal, a love that will endure through every twist and turn life throws our way.
+I promise to be the husband you deserve, the partner you can always count on. I promise to give you the life you’ve always dreamed of, to make you feel like the queen you are, and to love you with every fiber of my being for as long as I live.
+My promises to you, Sabiha, are boundless because my love for you knows no limits. And even if I were to spend a thousand lifetimes trying to show you just how much you mean to me, it still wouldn’t be enough. You are my everything, Sabiha, and I am yours, now and forever.
+
+
+
+
+            <b>Chapter 14: Tomorrow</b>
+
+Sabiha, my love, when I think of tomorrow, it’s never a vague blur or an uncertain possibility—it’s vivid, full of color, and unmistakably centered around you. My dreams for the future are dreams of us, of building a life together that feels as magical and grounding as the love we share right now.
+I often wonder what it’ll be like to wake up next to you every morning. No alarms from separate devices, no hurried goodbyes over texts. Just us, tangled in the sheets, the morning sunlight pouring through the window, and your soft breathing beside me. I imagine starting my day with you, your sleepy smile being the first thing I see, your warmth the first thing I feel. And, Sabiha, I promise you this: every single morning, I’ll kiss you on your forehead, your cheeks, and your lips, just to remind you how much I adore you.
+And Sabiha, it’s not just the mornings I dream of—it’s the nights, too. When the world slows down and there’s nothing but you and me. I imagine holding you close, feeling your skin against mine, and losing myself in the rhythm of our love. I crave the way our passion will fill the spaces between us, unspoken words melting into the heat of our bodies. Every night, I want to worship you—to make you feel cherished, loved, and desired in ways only I can. I dream of kissing every inch of you, of pulling you closer until we are completely lost in each other. And even after the fire subsides, I’ll hold you in my arms, our hearts beating as one, your soft breaths on my chest reminding me that this—you—is my home.
+There are so many dreams tied to our future, dreams that I keep close to my heart and nurture with every passing day. I imagine our first home, Sabiha—how we’ll pick out the furniture together, argue about the curtains, and laugh over our differing tastes. I imagine the walls filled with pictures of us—snapshots of our happiest moments, the laughter frozen in time, and little corners that feel like home simply because you’re in them.
+I dream of our wedding day, where I’ll be standing at the end of the aisle, watching you walk toward me. In that moment, Sabiha, I know the world will fade away, and it’ll just be you and me. You in your beautiful red saari, looking like the most ethereal being I’ve ever laid my eyes on, and me, trying to hold back tears because even then, I’ll still be in awe that I get to call you mine forever.
+And then there’s the dream of us as parents—a dream that makes me both nervous and incredibly excited. I imagine our kids running around the house, their laughter filling every corner. I imagine helping them make birthday cards for their mama, teaching them how to surprise you with flowers and little notes. I see us sitting together as a family, you at the center of it all, your smile brighter than anything else in the room.
+Sabiha, I think about the little moments too—the things that seem insignificant but mean everything to me. I dream of holding your hand while grocery shopping, sneaking kisses when no one’s looking, cooking dinner together (even if I burn everything), and dancing in the kitchen late at night. I dream of cuddling on the couch during rainy days, watching your favorite movies, and teasing you when you cry during the emotional parts.
+I also dream of the quiet moments, the ones where we’re just sitting in comfortable silence, maybe reading or scrolling through our phones, but still feeling completely connected. I imagine us growing old together, the years adding silver to your hair and more reasons to love you to my heart. I imagine looking at you decades from now and still feeling the same butterflies I feel today.
+And yet, Sabiha, I also think of the wild, unbridled passion that will always burn between us—because with you, I know it’ll never fade. I dream of all the times we’ll lose ourselves in each other, where nothing else will matter but the way your body moves against mine, the way you whisper my name in the softest, sweetest tone. I want to feel your warmth, over and over again, until we are breathless and content, tangled up in a love that feels like poetry written on skin. No matter how many years pass, I know I’ll always crave you, always need you, always find my way back to you in the most intimate ways possible.
+You’ve given me so much to look forward to, Sabiha. Loving you has transformed every “what if” into a “when,” every uncertainty into a promise. You make me believe in a future that’s not just possible but magical—a future where every day feels like a gift because I get to spend it with you.
+And, Sabiha, no matter what life throws at us, I want you to know that I’ll be by your side, every step of the way. We’ll face challenges together, celebrate victories together, and build something so beautiful that even time won’t be able to take it away.
+You are my tomorrow, Sabiha. My dream, my hope, my everything. And as I write this, my heart swells with the thought of all the tomorrows we’ll share—all the memories we’ll create, the love we’ll continue to nurture, and the life we’ll build together.
+I love you, Sabiha, more than words can ever express, and I can’t wait to spend every tomorrow proving it to you.
+
+
+
+
+            <b>Chapter 15: Glaze De Ultima:</b>
+
+I have written something for you. I call this 'glaze de ultima':
+"By your side, it feels like I’ve found something entirely different—a feeling that stands apart from anything I’ve ever known. It feels like I could never let you go because, deep down, it seems like my future is intricately tied to you, and I wouldn’t want it any other way. I hope we can continue painting this masterpiece together, guiding the brush to create the most breathtaking art of our future. A story with no end, one where you and I, hand in hand, write each chapter, each line, and each word.  
+With you, I feel something I’ve never felt before. Something that feels like home, something that fills me with a happiness so profound that it’s almost impossible to put into words. Isn’t it extraordinary? I look up at the sky, and even the stars seem dim compared to the light in your eyes. I’ve found everything I’ve ever longed for by your side. My heart and soul seem forever drawn to you, seeking you out like a compass unerringly pointing north.  
+You are perfect in my eyes—in all your quirks, imperfections, and every word you speak. The way you laugh, the way you move, and the way you simply exist make me adore you more deeply than I ever thought possible. I want to witness your growth, your triumphs, and even your moments of failure. To stand by you and celebrate every victory or weather every storm together. You’ve trusted me, shared moments of your life with me—good and bad—and I am beyond grateful to be here, to be yours, to simply *be*.  
+Sabiha, you stand before me like a vision crafted by the heavens themselves, every detail so effortlessly radiant that it’s impossible to look away. Your beauty isn’t just skin deep—it’s a symphony of perfection, playing on every sense, lingering in every heartbeat. Your thick, curly hair cascades in waves like a dark waterfall kissed by moonlight. Each strand holds the kind of allure that poets would envy, a wild yet elegant frame for a face that belongs in dreams. Your bold, perfectly arched eyebrows add strength to your delicate features, framing those mesmerizing eyes—eyes that hold galaxies, deep and endless, full of stories untold and mysteries unspoken. Your button-like nose sits perfectly on your face, an irresistible combination of innocence and charm. And your lips—full, soft, and temptingly kissable—are forever caught in the warmth of the sweetest blush, a shade of pink that seems to always stay flushed. When you smile, time itself seems to stop, your cheeks flushed with a rosy hue that could make the coldest winter feel like spring.
+Your skin, fair and glowing, radiates warmth from within, soft to the touch and smoother than the finest silk. Your body, curvy in all the right ways, is the epitome of sensuality. Every curve tells a story of strength and softness, with slender arms, graceful hands, and legs that seem to go on forever—sexy, elegant, and undeniably alluring.
+But it’s not just your physical beauty that captivates me—it’s the mind behind it all. A mind so sharp, so quick, and so full of life. Your wit, humor, and ability to see the world with such depth and kindness—it’s intoxicating. You are the perfect paradox of boldness and gentleness, of strength and vulnerability.
+When you move, it’s as if the universe pauses to admire you. Every step you take is fluid and purposeful, every gesture so naturally graceful it feels rehearsed by the stars. You don’t just walk into a room; you own it, effortlessly commanding attention without ever trying.
+You are my living masterpiece, my muse, my everything. Every curve, every thought, every glance—it all pulls me in, leaving me utterly spellbound. And yet, beyond your beauty, beyond your mind, is your soul. A soul so loving, so loyal, and so endlessly giving that it redefines what it means to love and be loved.
+You are my everything—like the sun, the air, the warmth on a cold winter’s night, or the chill that saves me on a scorching summer’s day. You are my comfort, the feeling of safety I get when I wrap myself in a blanket after watching a horror movie. You are my support when I’m at my lowest. You’re my home, my safe haven, my refuge.  
+Every time you’re near, my heart seems to falter. Your every move slows my heartbeat to a rhythm so delicate it feels like it might stop altogether. You are the life I long to have, the soul that sustains me, the shimmering light in my darkest hours. Every moment with you feels like a prayer answered, every glance from you is worth scaling mountains for.  
+You pull me in so many directions at once. My mind races, my heart pounds, and yet all I want is to be in your arms, wrapped in your warmth. The way you make me feel, Sabiha, I believe this is love. The purest, most overwhelming love.  
+You are the storm I’d willingly walk into, the sun I’d burn to reach. If I could hold the stars themselves, they’d pale in comparison to the warmth of your presence. Even if you’re a horizon I’ll never cross, I’d walk to the ends of the earth just to see you shine.  
+You’re the ache in my chest when I breathe too deeply, the bittersweet pull of a melody I can’t stop replaying. The laughter we share, the challenges we face—everything binds us together in this beautiful, chaotic dance of love.  
+Every day, I wake up, and the first thing on my mind is you. Your beautiful curls, your radiant smile, your captivating eyes. Your voice echoes in my mind like a symphony, and every little moment we’ve shared fills me with joy. I’ve been falling for you every day for what feels like an eternity, and I hope that you feel the same, now and forever.  
+You’re like an autumn sunrise, warm and comforting after a long, cold night. Even if love sometimes feels fragile, like it could fade with time, my love for you will always remain—a constant light, a home waiting with the porch light on. Even if the world feels like it’s pulling us apart, know that I’ll always be here, holding on to the warmth we share.  
+You are my sun, and I am your moon—destined to follow you, to cherish your light, to love you endlessly, even from afar. No other star, no other light, could ever compare to the brilliance you’ve brought into my life. You are my one and only, Sabiha, my beginning, my middle, and my end." 
+
+
+
+
+            <b>Chapter 16: To the Queen of My Hearts</b>
+
+Sabiha, my love, as I write this final chapter, my heart feels so full, yet I know there will never be enough words to capture everything I feel for you. This letter, these chapters—they are just fragments of the endless love I hold for you. Each sentence is a piece of my soul, each word a reflection of how deeply you’ve become a part of me.
+When I think of us, Sabiha, I think of permanence. Not the fleeting, conditional kind of love people speak of, but a love that feels infinite—boundless, eternal, and unwavering. You are my forever, Sabiha. I see it in every corner of my heart, in every beat, every thought, every dream. You are my always.
+You’ve taught me what love truly means—not the kind seen in movies or read in books, but a love that feels real and raw, yet impossibly beautiful. A love that grows in the small moments: the quiet calls late at night, the way your voice softens when you’re teasing me, the way your laughter feels like music to my soul. You are the definition of love for me, and I am endlessly grateful that I get to feel this way about someone as extraordinary as you.
+I promise you, Sabiha, that no matter where life takes us, I will always be here for you. Whether the days are bright or the storms roll in, I’ll stand by you, unwavering and steady. You will never have to face anything alone because I will always be your partner, your confidant, your biggest supporter, and your forever love.
+This is just conclusion to the letter, but never the conclusion of my love for you. As I sit here, putting together these words, my heart feels full, almost too full to write properly. Happy, happy, happiest birthday, my love. This is your day—the day the world became brighter, the day the stars shone a little more, the day you came into existence and made everything more beautiful. This is the first birthday I get to celebrate with you, and to say it’s an honor feels like an understatement. It’s more than an honor—it’s a privilege, a joy, a dream come true.
+Every moment I’ve spent thinking about this letter, every sentence I’ve written for you, it’s all been with one thing in mind: to make you feel as special as you truly are. Sabiha, you are extraordinary. You are a force of nature, a burst of light, a gentle warmth that makes life so much better just by being in it.
+This is your 16th birthday—a milestone, a celebration of not just who you are now, but of everything you’ve been and everything you’ll become. When I look at you, Sabiha, I see someone who is growing into herself so gracefully. I see someone who is kind and loving, strong and resilient, beautiful inside and out. I see someone who inspires me every single day.
+And as I think about this being your special day, I can’t help but feel overwhelmed by the memories we’ve shared. This is our first birthday together, but it feels like I’ve known you forever. I think about the way we started, the way we became “us.” Do you remember how shy we were at first? How every conversation felt like walking on air? And now look at us—we’ve built something so strong, so real, so full of love that it takes my breath away.
+I’ve been so lucky to be part of your life, to see you grow and thrive, to see your smile light up every room you walk into. Sabiha, you are everything I’ve ever wanted and so much more. You’ve shown me what it means to love and be loved. You’ve taught me patience, kindness, and how to be a better person. And for that, I will always, always be grateful.
+This letter isn’t just a gift—it’s a celebration of you, of us, of everything we’ve built together and everything we will build in the future. It’s a reflection of all the love I hold for you, all the admiration I have for who you are.
+You are the reason I believe in magic, the reason I believe in forever. You are the one I want to spend my life with, the one I want to wake up to every morning and fall asleep next to every night. You are my partner, my best friend, my everything.
+And today, on your birthday, I want you to know just how much you mean to me. I want you to feel every bit of the love and adoration I have for you. Because you, Sabiha, deserve the world.
+I know life isn’t always perfect, and neither are we. But that’s the beauty of it, isn’t it? That through all the ups and downs, through all the challenges and joys, we’ve chosen each other. And I will continue to choose you, every single day, for the rest of my life.
+As you step into this new year of your life, I hope you carry with you the knowledge that you are loved beyond measure. That you are cherished and adored in ways words can’t fully capture. I hope this year brings you all the happiness, success, and love you deserve.
+I know we’ve talked about the future, about what it might look like, about the dreams we share. And I want you to know that no matter what, I’m here for you. I’m here to support you, to cheer you on, to stand by your side as we navigate life together.
+So here’s to you, my love. Here’s to 16 years of you, and to all the years to come. Here’s to the laughter we’ve shared, the moments we’ve cherished, the memories we’ve made. Here’s to the love we’ve built, the bond we’ve created, the life we’re building together.
+Happy birthday, Sabiha. Thank you for being you, for being the most incredible person I’ve ever known. Thank you for loving me, for believing in me, for standing by me. Thank you for making my life so much brighter, so much fuller, so much more beautiful.
+I love you more than words can ever express. I love you with all my heart, with all my soul, with every part of me. And I will continue to love you, today and always.
+This is your day, Sabiha. Celebrate it, enjoy it, live it to the fullest. And know that I am here, always, loving you, supporting you, and cheering you on.
+Happy, happy, happiest birthday, my love. Here’s to you.
+With all my love,
+Your precious boy,
+Farhan 🕊
+
+--------------------------------------------------xxxxxxxxxx--------------------------------------------------
+
+And so, here it is—this letter, crafted with 16 chapters as a heartfelt tribute to my baby who has just turned 16. It holds exactly 15,124 words. Today’s date is 15/1/24 ❤ 
+        </div>
+    </div>
+</body>
+</html>
+
+
+    <script>
+        // Loading Animation
+        window.addEventListener('load', () => {
+            const overlay = document.querySelector('.loading-overlay');
+            setTimeout(() => {
+                overlay.style.opacity = '0';
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 500);
+            }, 1500);
+        });
+
+        // Sparkle Effect
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() < 0.1) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = e.pageX + 'px';
+                sparkle.style.top = e.pageY + 'px';
+                document.body.appendChild(sparkle);
+                setTimeout(() => sparkle.remove(), 1000);
+            }
+        });
+
+        // Heart Trail Effect
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() < 0.1) {
+                const heart = document.createElement('div');
+                heart.innerHTML = '❤';
+                heart.className = 'heart';
+                heart.style.left = e.pageX + 'px';
+                heart.style.top = e.pageY + 'px';
+                document.body.appendChild(heart);
+                setTimeout(() => heart.remove(), 3000);
+            }
+        });
+    </script>
+</body>
+</html>
